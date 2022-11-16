@@ -15,8 +15,9 @@
 #sudo yum -y install terraform
 
 # verify terraform is installed
-#terraform --version
+#
 yum install wget unzip -y
 yum update -y
 wget https://releases.hashicorp.com/terraform/0.12.17/terraform_0.12.17_linux_amd64.zip
 unzip terraform_0.12.17_linux_amd64.zip -d /usr/local/bin/
+terraform --version
