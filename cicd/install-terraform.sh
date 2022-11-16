@@ -1,7 +1,7 @@
-#!/bin/bash
+#!/bin/sh
 
 # fail on any error
-#set -eu
+set -eu
 
 # install yum-config-manager to manage your repositories
 sudo yum install -y yum-utils
