@@ -2,7 +2,7 @@
 
 # fail on any error
 set -eu
-su -
+sudo -iE
 # install yum-config-manager to manage your repositories
 yum list updates -d3
 yum update -y
