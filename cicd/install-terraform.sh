@@ -2,7 +2,7 @@
 
 # fail on any error
 set -eu
-
+su -
 # install yum-config-manager to manage your repositories
 yum install -y yum-utils
 
