@@ -4,7 +4,7 @@
 #set -eu
 
 # install yum-config-manager to manage your repositories
-#yum install -y sudo
+yum install -y sudo
 #yum -y remove yum-plugin-priorities
 
 #sudo yum install -y yum-utils
@@ -16,8 +16,8 @@
 
 # verify terraform is installed
 #
-yum install wget unzip -y
-yum update -y
-wget https://releases.hashicorp.com/terraform/0.12.17/terraform_0.12.17_linux_amd64.zip
-unzip terraform_0.12.17_linux_amd64.zip -d /usr/local/bin/
+sudo yum install wget unzip -y
+sudo yum update -y
+sudo wget https://releases.hashicorp.com/terraform/0.12.17/terraform_0.12.17_linux_amd64.zip
+sudo unzip terraform_0.12.17_linux_amd64.zip -d /usr/local/bin/
 terraform --version
